@@ -355,12 +355,14 @@ body button:focus {
 
 .modal-close-button:hover {
     transition-property: fill;
+    transition-property: cursor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover {
     fill: #ffffff;
+    cursor: pointer;
 }
 
 .text-button {
