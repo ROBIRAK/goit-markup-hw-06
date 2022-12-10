@@ -494,6 +494,10 @@ body button:focus {
     overflow: hidden;
 }
 
+.checkbox:focus+.custom-checkbox {
+    border: 2px solid #2196f3;
+}
+
 .checkbox:checked+.custom-checkbox .custom-check-icon {
     opacity: 1;
 }
@@ -501,7 +505,8 @@ body button:focus {
 .checkbox:checked+.custom-checkbox {
     fill: #ffffff;
     stroke: #2196f3;
-    border: 0px solid #2196f3;
+    /* border: 0px solid #2196f3; */
+    border: 2px solid #2196f3;
 }
 
 .custom-checkbox {
@@ -520,8 +525,8 @@ body button:focus {
 .custom-check-icon {
     width: 16px;
     height: 15px;
-    fill: #F5F4FA;
-    stroke: #2196f3;
+    /* fill: #F5F4FA;
+    stroke: #2196f3; */
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
