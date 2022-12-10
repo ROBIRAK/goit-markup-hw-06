@@ -293,6 +293,16 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.text-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    /* padding: 10px 32px; */
+    text-align: center;
+}
+
 body button:hover,
 body button:focus {
     background-color: #188ce8;
@@ -365,15 +375,203 @@ body button:focus {
     cursor: pointer;
 }
 
-.text-button {
+/* ФОРМА УЧИМСЯ */
+
+.modal-form {
+    padding: 40px;
+}
+
+.modal-form-field {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.form-middle-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-name-part {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+    align-items: flex-start;
+}
+
+.form-input {
+    padding: 11px 15px 11px 30px;
+    width: 448px;
+    transition: hover 250ms cubic-bezier(0.4, 0, 0.2, 1) focus 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+}
+
+.form-input:hover+.form-icon {
+    fill: #2196f3;
+}
+
+.form-input:focus+.form-icon {
+    fill: #2196f3;
+}
+
+.form-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-part-wraper {
+    position: relative;
+}
+
+.textarea {
+    padding: 12px 16px;
+    width: 448px;
+    height: 120px;
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.textarea:hover,
+.textarea:focus {
+    border: 1px solid #2196f3;
+    /* cursor: pointer; */
+    outline: none;
+}
+
+.modal-form-heading {
+    margin-bottom: 12px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    /* padding: 10px 32px; */
+    font-size: 20px;
+    line-height: 1.15;
     text-align: center;
 }
+
+.conditions-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lable-agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox:checked+.custom-checkbox .custom-check-icon {
+    opacity: 0;
+}
+
+.checkbox:checked+.custom-checkbox {
+    fill: #ffffff;
+    stroke: #2196f3;
+    border: 2px solid #2196f3;
+}
+
+.custom-checkbox {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid #212121;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+}
+
+.custom-check-icon {
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-agree {
+    margin-right: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.agree-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: underline;
+    color: #2196f3;
+}
+
+.modal-form-btn {
+    padding: 10px 52px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    color: #FFFFFF;
+    background-color: #188ce8;
+}
+
+/* ФОРМА УЧИМСЯ */
 
 .container {
     width: 1200px;
@@ -775,6 +973,73 @@ h2 {
 
 .footer-social-icon {
     color: #ffffff;
+}
+
+/* Футер підписка */
+
+.subscribe-footer {
+    display: block;
+    align-items: baseline;
+    margin-left: 93px;
+}
+
+.subscribe-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe-box {
+    display: flex;
+}
+
+.subscribe-form {
+    margin-right: 12px;
+}
+
+.subscribe-input {
+    padding: 10px;
+    width: 100%;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+    color: #ffffff;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.53;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #188ce8;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.icon-send {
+    margin-left: 10px;
 }
 
 /* Портфоліо */
