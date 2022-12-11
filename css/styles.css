@@ -506,8 +506,7 @@ body button:focus {
     fill: #ffffff;
     stroke: #2196f3;
     /* border: 0px solid #2196f3; */
-    border: 0px solid #2196f3;
-    border-radius: 2px;
+    border: 2px #2196f3;
 }
 
 .custom-checkbox {
